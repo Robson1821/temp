@@ -1,0 +1,43 @@
+//----------------------------------------------------------------------------------------------------------
+<!-- 
+<?php
+
+$query = "SELECT candidatos.* 
+		  FROM candidatos
+		  WHERE D_E_L_E_T_E_ <> '*'";
+$query = mysql_query($query) or die("Query invalida: " . mysql_error());
+
+while ($linha = mysql_fetch_array($query)) {
+
+$data = $linha['d_cadastro'];
+$candidato = $linha['usuario'];
+
+?>
+  
+<table class="table" cellspacing="0" cellpadding="3" bgcolor="#E8E8E8" >
+	<tr>
+		<td width="400px"   ><?php echo $linha['nome'] ?></td>
+		<td width="100px" align="center"><?php echo date('d/m/Y', strtotime($data));?></td>
+		<?php
+
+		$query1 = "select * from curriculo where usuario = '".$candidato."'";
+		$query1 = mysql_query($query1) or die("Query invalida: " . mysql_error());
+		$regs  = mysql_num_rows($query1);
+				
+		if ($regs == 0) {
+		?>
+		<td width="100px" aling="center"></td>
+		<?php } Else { ?>
+		<td width="100px" align="center">
+		<form id="participar" name="participar" method="post" action="viewer_cv.php" target="1">
+				<input name="cog"  type="hidden"  id="cod"     			value="<?php echo $linha['cod']; ?>" />
+				<input name="candidato"  type="hidden"  id="candidato" 			value="<?php echo $linha['usuario']; ?>" />
+				<input name="Submit"  type="image"   src="../img/ver.gif" 	value="participar" alt="botão" />
+		</td>
+		<?php } ?>
+		</tr>
+	</form>
+</table>
+<br />
+<br />
+<font class="h1"><center><?php echo $anteriores . " | " . $proximos; ?></center></font>-->

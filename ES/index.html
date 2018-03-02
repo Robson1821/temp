@@ -1,0 +1,1034 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Maiorino</title>
+
+	<meta name="msapplication-TileColor" content="#f68b1f">
+	<meta name="theme-color" content="#f68b1f">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/navigation.css" />
+	<link rel="stylesheet" type="text/css" href="css/atooltip.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/ihover.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/style-input.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/cases-hover.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles-responsive.css" />
+	<link href='https://fonts.googleapis.com/css?family=Palanquin:400,300,500,200' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/queryloader2.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	    window.addEventListener('DOMContentLoaded', function() {
+	        new QueryLoader2(document.querySelector("body"), {
+	            barColor: "#f68b1f",
+	            backgroundColor: "#111",
+	            percentage: true,
+	            barHeight: 1,
+	            minimumTime: 500,
+	            fadeOutTime: 1000
+	        });
+	    });
+	</script>
+
+
+	<script src="js/responsive-nav.js"></script>
+
+	<!--[if lt IE 9]>
+		<script>
+		document.createElement('video');
+		</script>
+	<![endif]-->
+	<!--Start of Tawk.to Script-->
+
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/574ef38a5748847b0a2c655f/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+
+<!--End of Tawk.to Script-->
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','http://google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-9896842-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+
+<!-- ********************************** Navegação ****************************** -->
+	<!-- Menu Navegação -->
+	<!-- <div data-sr='enter left, move 200px, wait 3s, opacity 0.3' class="menu"> -->
+	<div data-sr='enter left, move 200px, wait 3s, opacity 0.3' class="menu hidden-xs">
+		<button class="menu-toggle-button">
+			<i class="menu-icon fa fa-bars"></i>
+		</button>
+		<ul id="nav" class="menu-items">
+			<li class="menu-item current">
+				<a href="#home" class="menu-button fixedTip" title="home">
+					<i class="menu-icon fa fa-home"></i>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#cases" class="menu-button fixedTip" title="cases">
+					<i class="menu-icon fa fa-star-o"></i>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#servicios" class="menu-button fixedTip" title="servicios">
+					<i class="menu-icon fa fa-lightbulb-o"></i>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#contacto" class="menu-button fixedTip" title="contacto">
+					<i class="menu-icon fa fa-comment-o"></i>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#ubicacion" class="menu-button fixedTip" title="ubicación">
+					<i class="menu-icon fa fa-map-marker"></i>
+				</a>
+			</li>
+		</ul>
+
+		<!-- Filtro SVG -->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="350" height="0">
+		  	<defs>
+			    <filter id="goo">
+			      	<feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+			      	<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+			      	<feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+			    </filter>
+		  	</defs>
+		</svg>
+
+	</div>
+
+	<!-- Menu compartilhar -->
+	<div data-sr='enter right, move 200px, wait 3s, opacity 0.3' class="share hidden-xs">
+		<div class="share-wrapper">
+			<ul class="share-items">
+				<li class="share-item">
+					<button class="share-item-button" onclick="window.open('https://www.linkedin.com/company/2148732?trk=prof-0-ovw-curr_pos')">
+						<i class="share-item-icon fa fa-linkedin"></i>
+					</button>
+					<div class="share-item-bounce"></div>
+				</li>
+				<li class="share-item">
+					<button class="share-item-button" onclick="window.open('https://instagram.com/maiorinocomunicacao')">
+						<i class="share-item-icon fa fa-instagram"></i>
+					</button>
+					<div class="share-item-bounce"></div>
+				</li>
+				<li class="share-item">
+					<button class="share-item-button" onclick="window.open('https://www.facebook.com/AgenciaMaiorino')">
+						<i class="share-item-icon fa fa-facebook"></i>
+					</button>
+					<div class="share-item-bounce"></div>
+				</li>
+			</ul>
+			<button class="share-toggle-button">
+				<i class="fa fa-share-alt share-toggle-icon"></i>
+			</button>
+		</div>
+        
+        
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200">
+		  <defs>
+			<filter id="share">
+			  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="share" />
+			  <feComposite in="SourceGraphic" in2="share" operator="atop"/>
+			</filter>
+		  </defs>
+		</svg>
+	</div>
+
+
+    <header class="visible-xs-block">
+      <a href="#home" class="logo" data-scroll>Maiorino</a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item"><a href="#home" data-scroll>Home</a></li>
+          <li class="menu-item"><a href="#cases" data-scroll>Cases</a></li>
+          <li class="menu-item"><a href="#servicios" data-scroll>Servicios</a></li>
+          <li class="menu-item"><a href="#contacto" data-scroll>Contacto</a></li>
+          <li class="menu-item"><a href="#ubicacion" data-scroll>Ubicación</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- *********************** / Navegação ******************** -->
+
+
+
+
+
+<!-- ********************************** Home - Video ******************************** -->
+		<div id="home"></div>
+        <div id="video" class="section imgLiquidHome imgLiquid">
+        	
+            
+            <img src="images/apresentacao-inicial-maiorino-comunicacao.jpg" alt="" />
+            <!--
+            <video loop poster="images/poster.jpg" id="bgvid">
+                <source src="video/home.webm" type="video/webm">
+                <source src="video/home.mp4" type="video/mp4">
+            </video>
+            
+            <div id="botao">
+    	        <img src="images/bt-play.png" border="0" id="bt-pause-play" />
+	        </div>
+            -->
+            
+        </div>
+        
+<!-- ********************************** / Home - Video  ******************************* -->
+
+
+
+
+
+
+<!-- ********************************** Cases ******************************** -->
+	<div id="cases" class="section">
+		<div class="cut cut-top cut-cases"></div>
+
+		<div class="container-fluid meu-container">
+			<div class="row">
+			  	<div data-sr='enter top, vFactor 0.8, reset' class="col-md-12"><h1 class="titulo-1">cases</h1></div>
+			  	<div data-sr='enter top, vFactor 1, reset' class="col-md-12">
+                	<p class="descricao-1">
+                		Maiorino es especialista en fortalecer los lazos entre las empresas y sus públicos, sean ellos internos o externos. 
+                        <br />
+                        ¿Los resultados? Siempre innovadores.
+                        <br /><br />
+						Confiera los cases ;)
+                	</p>
+                </div>
+			</div>
+
+			<!-- Linha 1 -->
+			<div class="row">
+				<div data-sr='enter left, move 200px, vFactor 0.3, reset' class="col-sm-6">
+                	<div class="case pic">
+                    	<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/146820656?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 1 | 1" rel="case-itau-crianca">
+                        	<img src="images/cases/itau/itau-crianca/itau-crianca.jpg" class="pic-image" alt=""/>
+                            <span id="color" class="pic-caption come-left">
+                            	<h1 class="pic-title">Reverta  6% de  su impuesto de renta debido para la educación</h1>
+                                <p>Un vídeo emocionante para uno de los proyectos transformadores del Banco Itaú.</p>
+							</span>
+						</a>
+    
+                        <div class="hidden">
+                        	<!--<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/145567095?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="video 2 | 2" rel="case-itau-crianca">Vimeo</a>
+                            <a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/139911208?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="video 3 | 3" rel="case-itau-crianca">Vimeo</a>-->
+						</div>
+					</div>
+				</div>
+				<div data-sr='enter right, move 200px, vFactor 0.3, reset' class="col-sm-6">
+                    <div class="case pic">
+                        <a class="fancybox" href="images/cases/klabin/Klabin-1.jpg" title="imagen 1 | 2" rel="case-klabin">
+                            <img src="images/cases/klabin/menos-velocidade-mais-vida.jpg" class="pic-image" alt=""/>
+                            <span class="pic-caption come-right">
+                                <h1 class="pic-title">Klabin: respecto y cuidado por los animales</h1>
+                                <p>Maiorino elaboro una campaña en contra el atropellamiento de los animales silvestres en el Paraná.</p>
+                            </span>
+                        </a>
+    
+                        <div class="hidden">
+                            <a class="fancybox" href="images/cases/klabin/Klabin-4.jpg" title="imagen 2 | 2" rel="case-klabin">Vimeo</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+
+			<!-- Linha 2 -->
+			<div class="row">
+				<div data-sr='enter left, move 200px, vFactor 0.3, reset' class="col-sm-6">
+					<div class="case pic">
+						<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/145173377?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 1 | 3" rel="case-novelis">
+						    <img src="images/cases/novelis/Cases-Novelis-Orgulho.jpg" class="pic-image" alt=""/>
+						    <span id="color" class="pic-caption come-left">
+						        <h1 class="pic-title">Orgullo de ser Novelis</h1>
+						        <p>La pasión por hacer parte de la mayor industria de laminados y  reciclaje de aluminios.</p>
+					    	</span>
+						</a>
+
+						<div class="hidden">
+							<a class="fancybox" href="images/cases/novelis/Novelis-2.jpg" title="imagen 2 | 3" rel="case-novelis"></a>
+                            <a class="fancybox" href="images/cases/novelis/Novelis-3.jpg" title="imagen 3 | 3" rel="case-novelis"></a>
+						</div>
+					</div>
+				</div>
+
+				<div data-sr='enter right, move 200px, vFactor 0.3, reset' class="col-sm-6">
+					<div class="case pic">
+						<a class="fancybox" href="images/cases/aunde/Aunde-1.jpg" title="imagen 1 | 2" rel="case-aunde">
+						    <img src="images/cases/aunde/Case-Aunde-Sustentavel.jpg" class="pic-image" alt=""/>
+						    <span id="color" class="pic-caption come-left">
+						        <h1 class="pic-title">Fantástica Aunde</h1>
+						        <p>Una empresa que camina lado a lado con el medio ambiente.</p>
+					    	</span>
+						</a>
+
+						<div class="hidden">
+							<a class="fancybox" href="images/cases/aunde/Aunde-2.jpg" title="imagen 2 | 2" rel="case-aunde"></a>
+                            <!--<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/145431853?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 3 | 3" rel="case-aunde">Vimeo</a>-->
+						</div>
+					</div>
+				</div>
+            	
+			</div>
+
+
+			<!-- Linha 3 -->
+            <div class="row">
+				
+                <div data-sr='enter left, move 200px, vFactor 0.3, reset' class="col-sm-6">
+                    <div class="case pic">
+                        <a class="fancybox" href="images/cases/imerys/Cartilha_imerys.jpg" title="imagen 1 | 1" rel="case-imerys">
+                            <img src="images/cases/imerys/Case-imerys.jpg" class="pic-image" alt=""/>
+                            <span class="pic-caption come-right">
+                                <h1 class="pic-title">Imerys  Cabonate</h1>
+                                <p>Guión ilustrado que integra, de manera ligera, los colaboradores de la empresa.</p>
+                            </span>
+                        </a>
+    
+                        <div class="hidden">
+                            <!--<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/145542443?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="video 2 | 3" rel="case-imerys">Vimeo</a>
+                            <a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/143920961?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="video 3 | 3" rel="case-imerys">Vimeo</a>-->
+                        </div>
+                    </div>
+				</div>
+                
+            	<div data-sr='enter right, move 200px, vFactor 0.3, reset' class="col-sm-6">
+					<div class="case pic">
+						<a class="fancybox" href="images/cases/eurofarma/Eurofarma-1.jpg" title="imagen 1 | 3" rel="case-eurofarma">
+						    <img src="images/cases/eurofarma/Case-Eurofarma-Viver-Bem.jpg" class="pic-image" alt=""/>
+						    <span id="color" class="pic-caption come-left">
+						        <h1 class="pic-title">Estar de bien con la vida, siempre.</h1>
+						        <p>Un sitio que lleva más cualidad de vida para los colaboradores de la Eurofarma.</p>
+					    	</span>
+						</a>
+
+						<div class="hidden">
+							<a class="fancybox" href="images/cases/eurofarma/Eurofarma-2.jpg" title="imagen 2 | 3" rel="case-eurofarma">Vimeo</a>
+                            <a class="fancybox" href="images/cases/eurofarma/Eurofarma-3.jpg" title="imagen 3 | 3" rel="case-eurofarma">Vimeo</a>
+						</div>
+					</div>
+				</div>
+            </div>
+            
+            
+            <!-- Linha 4 -->
+            <div class="row">
+            	<div data-sr='enter left, move 200px, vFactor 0.3, reset' class="col-sm-6">
+                    <div class="case pic">
+                        <a class="fancybox" href="images/cases/dgm/DGM-1.jpg" title="imagen 1 | 3" rel="case-dgm">
+                            <img src="images/cases/dgm/Case-DGM-Karina.jpg" class="pic-image" alt=""/>
+                            <span class="pic-caption come-right">
+                                <h1 class="pic-title">Innovación que valora la belleza</h1>
+                                <p>Este es el principio que nortea la marca brasileña  DGM.</p>
+                            </span>
+                        </a>
+    
+                        <div class="hidden">
+                            <a class="fancybox" href="images/cases/dgm/DGM-2.jpg" title="imagen 2 | 3" rel="case-dgm"></a>
+                            <a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/143920961?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="video 3 | 3" rel="case-dgm">Vimeo</a>
+                        </div>
+                    </div>
+				</div>
+            	<div data-sr='enter right, move 200px, vFactor 0.3, reset' class="col-sm-6">
+					<div class="case pic">
+						<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/156272897?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 1 | 1" rel="case-cultura">
+						    <img src="images/cases/itau/cultura-de-risco/case-cultura-de-risco.jpg" class="pic-image" alt=""/>
+						    <span id="color" class="pic-caption come-left">
+						        <h1 class="pic-title">Animación en  vídeo</h1>
+						        <p>Una poderosa herramienta para entrenamientos y apoyo en ventas.</p>
+					    	</span>
+						</a>
+
+						<div class="hidden">
+							<!--<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/145431874?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 2 | 3" rel="case-cultura">Vimeo</a>
+                            <a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/145431853?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 3 | 3" rel="case-cultura">Vimeo</a>-->
+						</div>
+					</div>
+				</div>
+			</div>
+               
+                
+			<!-- Linha 5 -->
+            <div class="row">
+				<div data-sr='enter left, move 200px, vFactor 0.3, reset' class="col-sm-6">
+					<div class="case pic">
+						<a class="fancybox" href="images/cases/tam/TAM-1.jpg" title="imagem 1 | 3" rel="case-peace">
+						    <img src="images/cases/tam/Case-Tam-Peace.jpg" class="pic-image" alt=""/>
+						    <span id="color" class="pic-caption come-left">
+						        <h1 class="pic-title">10 años de Peace</h1>
+						        <p>Una campaña inolvidablel para una fecha especial.</p>
+					    	</span>
+						</a>
+
+						<div class="hidden">
+							<a class="fancybox" href="images/cases/tam/TAM-2.jpg" title="imagem 2 | 3" rel="case-peace"></a>
+                            <a class="fancybox" href="images/cases/tam/TAM-3.jpg" title="imagem 3 | 3" rel="case-peace"></a>
+						</div>
+					</div>
+				</div>
+                
+				<div data-sr='enter right, move 200px, vFactor 0.3, reset' class="col-sm-6">
+					<div class="case pic">
+						<a class="fancybox" href="images/cases/sciath/SCIATH-1.jpg" title="imagem 1 | 3" rel="case-sciath">
+						    <img src="images/cases/sciath/Case-Sciath-10anos.jpg" class="pic-image" alt=""/>
+						    <span class="pic-caption come-right">
+						        <h1 class="pic-title">SCIATH: ¡una década de éxito!</h1>
+						        <p>El aniversario de esta marca fuerte recibió una celebración a la altura.</p>
+					    	</span>
+						</a>
+
+						<div class="hidden">
+							<a class="fancybox" href="images/cases/sciath/SCIATH-2.jpg" title="imagem 2 | 3" rel="case-sciath"></a>
+                            <a class="fancybox" href="images/cases/sciath/SCIATH-3.jpg" title="imagem 3 | 3" rel="case-sciath"></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+            <!-- Linha 6 -->
+            <div class="row">
+            	<div data-sr='enter left, move 200px, vFactor 0.3, reset' class="col-sm-6">
+                	<div class="case pic">
+                    	<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/196444015?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 1 | 1" rel="CDC 25 anos">
+                        	<img src="images/cases/itau/cdc/cdc25anos.jpg" class="pic-image" alt=""/>
+                            <span id="color" class="pic-caption come-left">
+                            	<h1 class="pic-title">Código de Defensa del Consumidor </h1>
+                                <p>25 años de acercamiento entre empresas y  clientes.</p>
+							</span>
+						</a>
+    
+                        <div class="hidden">
+                        	<!--<a class="fancybox" href="images/cases/jau-lazaro/JAU-2.jpg" title="video 2 | 2" rel="case-jau"></a>-->
+						</div>
+					</div>
+				</div>
+                
+                <div data-sr='enter right, move 200px, vFactor 0.3, reset' class="col-sm-6">
+					<div class="case pic">
+						<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/146817526?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="vídeo 1 | 2" rel="case-comunidade-presente">
+						    <img src="images/cases/itau/comunidade-presente/Cases-Comunidade-Presente.jpg" class="pic-image" alt=""/>
+						    <span class="pic-caption come-right">
+						        <h1 class="pic-title">¡Comunidad, presente!</h1>
+						        <p>Una campaña para conectar el Banco Itaú a la comunidad.</p>
+					    	</span>
+						</a>
+						<div class="hidden">
+							<a class="fancybox" href="images/cases/itau/comunidade-presente/ComunidadePresente-2.jpg" title="imagem 2 | 2" rel="case-comunidade-presente">Vimeo</a>
+                            <!--<a class="fancybox fancybox.iframe" href="https://player.vimeo.com/video/139911208?autoplay=1&color=0c88dd&title=0&byline=0&portrait=0" title="video 3 | 3" rel="case-comunidade-presente">Vimeo</a>-->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+<!-- ********************************** / Cases ******************************** -->
+
+
+
+
+<!-- ********************************** Serviços ******************************** -->
+	<div id="servicios" class="section">
+		<div class="cut cut-top cut-servicos"></div>
+		
+
+		<div class="container-fluid meu-container">
+
+			<div class="row">
+			  	<div data-sr='enter top, vFactor 0.8, reset' class="col-md-12"><h1 class="titulo-2">servicios</h1></div>
+			  	<div data-sr='enter top, vFactor 1, reset' class="col-md-12"><p class="descricao-2">Maiorino es especialista en acercar a personas y marcas.</p></div>
+                <!--<div data-sr='enter top, vFactor 1, reset' class="col-md-12"><p class="descricao-2">Conheça tudo o que oferecemos e encontre o serviço ideal para deixar seu negócio ainda mais inovador e próximo dos seus públicos!</p></div>-->
+			</div>
+
+			<div data-sr='enter top, vFactor 0.6, reset' class="row">
+
+				<div class="col-sm-6 hidden-xs">
+					<p class="click-servico"><strong>Cliquea en los íconos para navegar.</strong></p>
+					<div id='piemenu' data-wheelnav
+						data-wheelnav-slicepath='DonutSlice'
+						data-wheelnav-navangle='0'
+						data-wheelnav-titleheight='1'
+						data-wheelnav-cssmode 
+						data-wheelnav-init>
+						<div data-wheelnav-navitemicon='webmultimidia' onmouseup='changeNav("step1");'></div>
+						<div data-wheelnav-navitemicon='eventos' onmouseup='changeNav("step2");'></div>
+						<div data-wheelnav-navitemicon='planejamentoComunicacao' onmouseup='changeNav("step3");'></div>
+						<div data-wheelnav-navitemicon='marketingIncentivo' onmouseup='changeNav("step4");'></div>
+						<div data-wheelnav-navitemicon='comunicacaoVisual' onmouseup='changeNav("step5");'></div>
+					</div>
+				</div>
+
+				
+				<div class="col-sm-6">
+					
+					<!-- Nav tabs -->
+					<!-- <ul id="tabServicos" class="nav nav-tabs visible-xs-block" role="tablist"> -->
+					<ul id="tabServicos" class="nav nav-tabs visible-xs-block" role="tablist">
+						<li role="presentation" class="active"><a href="#step1" aria-controls="step1" role="tab" data-toggle="tab">web y multimedia</a></li>
+						<li role="presentation"><a href="#step2" aria-controls="step2" role="tab" data-toggle="tab">eventos</a></li>
+						<li role="presentation"><a href="#step3" aria-controls="step3" role="tab" data-toggle="tab">planificación y comunicación</a></li>
+						<li role="presentation"><a href="#step4" aria-controls="step4" role="tab" data-toggle="tab">marketing de incentivo</a></li>
+						<li role="presentation"><a href="#step5" aria-controls="step5" role="tab" data-toggle="tab">comunicación visual y proyectos especiales</a></li>
+					</ul>
+
+
+			        <!-- Tab panes -->
+			        <div class="tab-content">
+			          
+			          	<div role="tabpanel" class="tab-pane fade in active" id="step1">
+				            <h1 class="animated fadeInUp">web y multimedia</h1>
+				            <h3 class="animated fadeInUp">Online con las últimas tendencias,  Maiorino posee un departamento de diseño web para desarrollo de piezas electrónicas para que su empresa acceda de una vez a la era digital.</h3>
+				            <ul class="animated fadeInUp">
+								<li><span>&#8250;</span> E-commerce</li>
+				            	<li><span>&#8250;</span> Website</li>
+				            	<li><span>&#8250;</span> Hotsite</li>
+				            	<li><span>&#8250;</span> E-mail marketing</li>
+				            	<li><span>&#8250;</span> Proyectos multimedia</li>
+				            	<li><span>&#8250;</span> Animaciones, entre otros</li>
+				            	<li><span>&#8250;</span> Animações, entre outros</li>
+				            </ul>
+				            <h4 class="animated fadeInUp">conectividad e interactividad</h4>
+		            	</div>
+			          
+						<div role="tabpanel" class="tab-pane fade" id="step2">
+							<h1 class="animated fadeInUp">eventos</h1>
+							<h3 class="animated fadeInUp">Eventos empresariales, acciones promocionales y comercialización exigen experiencia y sólida asociación con proveedores confiables y capacitados de los más diversos segmentos.  Maiorino  coordina cada detalle para que todo transcurra con perfección.</h3>
+				            <ul class="animated fadeInUp">
+				            	<li><span>&#8250;</span> Ferias y exposiciones</li>
+				            	<li><span>&#8250;</span> Lanzamientos de productos, inauguraciones y confraternizaciones</li>
+				            	<li><span>&#8250;</span> Convenciones, contratación de charlas y entrenamientos</li>
+				            	<li><span>&#8250;</span> Operaciones, PDV, blitz, sampling y volanteo</li>
+				            	<li><span>&#8250;</span> Logística promocional, entre otros</li>
+				            </ul>
+				            <h4 class="animated fadeInUp">desafío y  éxito</h4>							
+						</div>
+
+						<div role="tabpanel" class="tab-pane fade" id="step3">
+							<h1 class="animated fadeInUp">planificación y comunicación</h1>
+							<h3 class="animated fadeInUp">Con equipos integrados de atención, planificación y creación,  Maiorino ofrece asesoría y suporte  en las siguientes áreas:</h3>
+				            <ul class="animated fadeInUp">
+				            	<li><span>&#8250;</span> Planificación estratégica de marketing y comunicación</li>
+				            	<li><span>&#8250;</span> Creación de piezas publicitarias online y offline</li>
+				            	<li><span>&#8250;</span> Planificación de medias y enlace (agencia certificada por el  CENP)</li>
+				            	<li><span>&#8250;</span> Comunicación corporativa y asesoría de prensa</li>
+				            	<li><span>&#8250;</span> Diseño gráfico e identidad visual</li>
+				            	<li><span>&#8250;</span> Marketing directo y de relacionamiento</li>
+				            </ul>
+				            <h4 class="animated fadeInUp">creatividad y conquista</h4>
+						</div>
+
+						<div role="tabpanel" class="tab-pane fade" id="step4">
+							<h1 class="animated fadeInUp">marketing de incentivo</h1>
+							<h3 class="animated fadeInUp">Maiorino desarrolla todas las etapas de campañas de incentivo, de la concepción a la premiación. Esta herramienta ha sido ampliamente utilizada por empresas que reconocen y quieren premiar a los esfuerzos de su equipo interno o de sus socios, para obtener los mejores resultados en vendas, performance y  productividad.</h3>
+				            <h4 class="animated fadeInUp">estímulo y superación</h4>
+						</div>
+
+						<div role="tabpanel" class="tab-pane fade" id="step5">
+							<h1 class="animated fadeInUp">comunicación visual y proyectos especiales</h1>
+							<h3 class="animated fadeInUp">Maiorino ejecuta proyectos personalizados, con nuevas ideas, para que usted muestre su producto o marca de forma no convencional.</h3>
+							<h4 class="animated fadeInUp">osadía e innovación</h4>
+						</div>
+
+			        </div>
+				</div>
+			</div> <!-- /row -->
+		</div> <!-- /container-fluid -->
+
+	</div> <!-- /Servicos -->
+<!-- ********************************** / Serviços ******************************** -->
+
+
+
+
+<!-- ********************************** Contato ******************************** -->
+	<div id="contacto" class="section">
+		<div class="cut cut-top cut-cases"></div>
+		
+		<div class="container-fluid meu-container">
+
+			<div class="row">
+			  	<div data-sr='enter top, vFactor 0.8, reset' class="col-md-12"><h1 class="titulo-1">contacto</h1></div>
+			  	<div data-sr='enter top, vFactor 1, reset' class="col-md-12"><p class="descricao-1">¿Quiere  conocernos  mejor y tomar un cafecito con nosotros? ¡Entre en contacto!</p></div>
+			</div>
+
+			<!-- <ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+				<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+			</ul> -->
+
+
+				<!-- Nav tabs -->
+				<!-- <ul class="row contato-trabalhe nav nav-tabs" role="tablist">
+					<li role="presentation" class="active col-md-6"><a href="#home-form" aria-controls="home-form" role="tab" data-toggle="tab">Contato</a></li>
+					<li role="presentation" class="col-md-6"><a href="#profile-form" aria-controls="profile-form" role="tab" data-toggle="tab">Trabalhe conosco</a></li>
+				</ul> -->
+
+
+				<!-- Tab panes -->
+				<div class="tab-content"">
+
+					<!-- CONTATO -->
+					<div role="tabpanel" class="tab-pane active fade in" id="home-form">
+						<form name="form" method="post" action="mail.php" onSubmit="return Form.Send(this.action);" class="form">
+
+							<div class="row">
+								<div data-sr='enter left, vFactor 0.5' class="col-sm-6">
+									<span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" name="nome" id="input-5" required />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-5">
+											<span class="input__label-content input__label-content--hoshi">Nombre</span>
+										</label>
+									</span>
+								</div>
+								
+								<div data-sr='enter right, vFactor 0.5' class="col-sm-6">
+									<span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" name="empresa" id="input-6" required />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-6">
+											<span class="input__label-content input__label-content--hoshi">Empresa</span>
+										</label>
+									</span>
+								</div>
+							</div>
+
+							<div class="row">
+								<div data-sr='enter left, vFactor 0.5' class="col-sm-6">
+									<span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" name="telefone" id="input-5" required />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-5">
+											<span class="input__label-content input__label-content--hoshi">Teléfono</span>
+										</label>
+									</span>
+								</div>
+								
+								<div data-sr='enter right, vFactor 0.5' class="col-sm-6">
+									<span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" name="email" id="input-6" required />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-6">
+											<span class="input__label-content input__label-content--hoshi">Correo electrónico</span>
+										</label>
+									</span>
+								</div>
+							</div>
+
+							<div data-sr='enter top, vFactor 0.5' class="row">
+								<div class="col-sm-12">
+									<textarea name="mensagem" id="mensagem" placeholder="Mensaje"></textarea>
+								</div>
+							</div>
+
+
+							<div data-sr='enter top, vFactor 0.5' class="row">
+								<div class="col-sm-12">
+									<input type="submit" value="" id="enviar">
+								</div>
+							</div>
+
+						</form>
+					</div>
+					
+
+					<!-- TRABALHE CONOSCO -->
+					<div role="tabpanel" class="tab-pane fade" id="profile-form">
+						<div class="row txt-trabalhe">
+
+							<!-- Login -->
+							<div class="col-md-6">
+								<h2>Login</h2>
+								<form name="form" method="post" action="php/login.php" onSubmit="return Form.Send(this.action);" class="form">
+									<div class="row">
+										<div class="col-sm-12">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="text" name="auser" id="input-5" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-5">
+													<span class="input__label-content input__label-content--hoshi">Login</span>
+												</label>
+											</span>
+										</div>
+										
+										<div class="col-sm-12">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="password" name="apass" id="input-6" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-6">
+													<span class="input__label-content input__label-content--hoshi">Senha</span>
+												</label>
+											</span>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-sm-12">
+											<input type="submit" value="Acessar" class="btn-trabalhe acessar">
+										</div>
+									</div>
+								</form>
+							</div>
+
+
+							<!-- Cadastrar -->
+							<div class="col-md-6 form-cadastrar">
+								<h2>Cadastrar</h2>
+								<p>Faça parte da nossa equipe e experimente buscar o novo em um ambiente de trabalho criativo e desafiador. Aqui é o lugar de pessoas dispostas a interagir, envolver com paixão, inovar e dialogar.</p>
+								<form name="form" method="post" action="php/newuser.php" onSubmit="return Form.Send(this.action);" class="form">
+									<div class="row">
+										<div class="col-sm-6">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="text" name="cad-nome" id="input-5" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-5">
+													<span class="input__label-content input__label-content--hoshi">Nome completo</span>
+												</label>
+											</span>
+										</div>
+										
+										<div class="col-sm-6">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="text" name="cad-cpf" id="input-6" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-6">
+													<span class="input__label-content input__label-content--hoshi">CPF (sem pontos e traços)</span>
+												</label>
+											</span>
+										</div>
+
+										<div class="col-sm-6">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="text" name="cad-trabalhe" id="input-6" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-6">
+													<span class="input__label-content input__label-content--hoshi">Usuário (sem espaços)</span>
+												</label>
+											</span>
+										</div>
+
+										<div class="col-sm-6">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="text" name="cad-email" id="input-6" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-6">
+													<span class="input__label-content input__label-content--hoshi">E-mail</span>
+												</label>
+											</span>
+										</div>
+
+										<div class="col-sm-6">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="password" name="cad-senha" id="input-6" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-6">
+													<span class="input__label-content input__label-content--hoshi">Senha</span>
+												</label>
+											</span>
+										</div>
+
+										<div class="col-sm-6">
+											<span class="input input--hoshi">
+												<input class="input__field input__field--hoshi" type="password" name="cad-confsenha" id="input-6" required />
+												<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-6">
+													<span class="input__label-content input__label-content--hoshi">Confirmar senha</span>
+												</label>
+											</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<input type="submit" value="Enviar" class="btn-trabalhe cadastrar">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			
+		</div>
+
+		<div class="cut cut-bottom cut-servicos hidden-xs"></div>
+	</div>
+	<!-- ********************************** / Contato ******************************** -->
+
+
+
+
+
+<!-- ********************************** Mapa ******************************** -->
+	<div class="section-mapa" id="ubicacion">
+		<div class="cut cut-top cut-servicos"></div>
+		
+		<div id="map" class="imgLiquidFill imgLiquid">
+			<img src="images/linkMapa.jpg">
+		</div>
+		<!-- <div id="map" class="hidden-xs hidden-sm"></div> -->
+	</div>
+<!-- ********************************** / Mapa ******************************** -->
+
+
+
+
+
+<!-- ********************************** Rodapé ******************************** -->
+	<div class="section rodape">
+		<div class="container-fluid">
+			<div class="row">
+				<div data-sr='enter left, vFactor 0.5, reset' class="col-md-12">
+					<a class="linkCel" href="waze://?ll=-23.717238, -46.548300&navigate=yes" target="_blank"><img src="images/waze.png" alt="Navegar pelo Waze" class="hidden-md hidden-lg" /></a>
+					<a class="linkCel" href="https://www.google.com/maps/place/Maiorino+Comunica%C3%A7%C3%A3o/@-23.7169138,-46.5491229,16.75z/data=!4m5!3m4!1s0x0:0x8707682268621532!8m2!3d-23.717233!4d-46.5483109?hl=pt-BR" target="_blank"><img src="images/maps.png" alt="Abrir Google Maps" class="hidden-md hidden-lg" /></a>
+
+					<!-- <a href="geo:-23.717238,-46.548300" target="_blank"><img src="images/maps.png" alt="Abrir Google Maps" class="hidden-md hidden-lg" /></a> -->
+					<a class="enderecoMaps" href="https://www.google.com/maps/place/Maiorino+Comunica%C3%A7%C3%A3o/@-23.717233,-46.5494053,18z/data=!3m1!4b1!4m5!3m4!1s0x94ce4184c3de2d3f:0x8707682268621532!8m2!3d-23.717233!4d-46.548311?hl=pt-BR" target="_blank">
+                    	<h4>Calle. General Osório, 111 - Centro</h4>
+						<h4>São Bernardo do Campo - São Paulo, 09715-380</h4>
+					</a>
+					<p>55 11 4339 8287</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ********************************** / Rodapé ******************************** -->
+
+
+
+	<script type="text/javascript" src="js/raphael.min.js"></script>
+    <script type="text/javascript" src="js/raphael.icons.min.js"></script>
+	<script type="text/javascript" src="js/wheelnav.js"></script>
+	<script src='js/scrollReveal.js'></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/jquery.atooltip.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	
+	<script src="js/scroll.js"></script>
+	<script src="js/fixed-responsive-nav.js"></script>
+	<script src="js/imgLiquid-min.js"></script>
+
+
+	<!--
+	<script>
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 18,
+		    center: new google.maps.LatLng(-23.717229, -46.548436),
+		   	disableDefaultUI: false,
+		    scrollwheel: false,
+		    streetViewControl: false
+		  }
+		  
+		  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		 
+		 
+		   var marker = new google.maps.Marker({
+		      position: new google.maps.LatLng(-23.717229, -46.548436),
+		      map: map,
+		      title: 'Maiorino Comunicação',
+		      icon:"images/pin2.png"
+		  });
+		 
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	-->
+
+	<script>
+		$(document).ready(function() {
+		    $(".imgLiquidFill").imgLiquid();
+		});
+
+		$(document).ready(function() {
+		    $(".imgLiquidHome").imgLiquid({
+		    	horizontalAlign: "20%",
+        		verticalAlign: "top"
+		    });
+		});
+	</script>
+	
+    
+    <script>
+		var video = document.getElementById("bgvid"),
+		//pauseButton = document.querySelector("#botao img");
+		pauseButton = document.getElementById("bt-pause-play");
+	
+		function vidFade() {
+		  video.classList.add("stopfade");
+		}
+		
+		video.addEventListener('ended', function()
+		{
+		// only functional if "loop" is removed 
+		video.pause();
+		vidFade();
+		}, false); 
+		 
+		pauseButton.addEventListener("click", function() {
+		  video.classList.toggle("stopfade");
+		  if (video.paused) {
+			video.play();
+			//pauseButton.innerHTML = "pause";
+			pauseButton.src = "images/bt-pause.png";
+		  } else {
+			video.pause();
+			//pauseButton.innerHTML = "play";
+			pauseButton.src = "images/bt-play.png";
+		  }
+		}, false);
+		
+		video.addEventListener('touchstart', function(e) {
+		e.preventDefault();
+		video.play();
+		})
+	</script>
+    
+
+	<!-- aToolTip js -->
+	<script type="text/javascript">
+		$(function(){ 
+			$('a.fixedTip').aToolTip({
+	    		fixed: true
+			});
+		}); 
+	</script>
+
+
+    <script type="text/javascript">
+        var piemenu = new wheelnav('piemenu');
+		piemenu.wheelRadius = piemenu.wheelRadius * 0.83;
+		piemenu.animatetime = 600;
+		piemenu.animateeffect = '<>';
+		piemenu.createWheel()
+		//piemenu.navigateWheel(2)
+    </script>
+
+
+    <script type="text/javascript">
+    	function changeNav(step) {
+		  //$('.thisYear').html(thisYear());
+		    $('#tabServicos a[href="#' + step + '"]').tab('show') // Select tab by name
+		}
+	</script>
+
+
+	<script>
+		(function() {
+			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+			if (!String.prototype.trim) {
+				(function() {
+					// Make sure we trim BOM and NBSP
+					var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+					String.prototype.trim = function() {
+						return this.replace(rtrim, '');
+					};
+				})();
+			}
+
+			[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+				// in case the input is already filled..
+				if( inputEl.value.trim() !== '' ) {
+					classie.add( inputEl.parentNode, 'input--filled' );
+				}
+
+				// events:
+				inputEl.addEventListener( 'focus', onInputFocus );
+				inputEl.addEventListener( 'blur', onInputBlur );
+			} );
+
+			function onInputFocus( ev ) {
+				classie.add( ev.target.parentNode, 'input--filled' );
+			}
+
+			function onInputBlur( ev ) {
+				if( ev.target.value.trim() === '' ) {
+					classie.remove( ev.target.parentNode, 'input--filled' );
+				}
+			}
+		})();
+	</script>
+
+
+	<!-- TOUCH FRIENDLY IN MOBILE DEVICES - cases -->
+	<script>
+		document.addEventListener("touchstart", function(){}, true);
+	</script>
+
+
+	<script type="text/javascript">
+		$(".fancybox").fancybox({
+	        padding : 0,
+	        helpers: {
+			    overlay: {
+			      locked: false
+			    }
+			  }
+	    });
+	</script>
+
+
+
+	<script type="text/javascript">
+		$('#nav').onePageNav({
+		    currentClass: 'current',
+		    changeHash: false,
+		    scrollSpeed: 750,
+		    scrollThreshold: 0.5,
+		    filter: '',
+		    easing: 'swing',
+		    begin: function() {
+		        //I get fired when the animation is starting
+		    },
+		    end: function() {
+		        //I get fired when the animation is ending
+		    },
+		    scrollChange: function($currentListItem) {
+		        //I get fired when you enter a section and I pass the list item of the section
+		    }
+		});
+	</script>
+
+
+
+    <script>
+    	window.sr = new scrollReveal();
+    </script>
+
+
+
+
+
+
+</body>
+</html>
